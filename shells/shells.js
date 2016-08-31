@@ -4,7 +4,7 @@
 
 
 var svg;
-var numberOfProtons = 8;
+var numberOfProtons = 126;
 
 function getSVGById(id) {
 	container = document.getElementById(id);

@@ -28,4 +28,4 @@ $('#protons').on('load', function () {
 $('#numProtons').on('change', function () {
 	numProtons = $('#numProtons').val();
 	changeProtons(protonSVG, numProtons, 'red');
-};
+});

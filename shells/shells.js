@@ -11,7 +11,13 @@ $('#protons').on('load', function () {
 	console.log(svg);
 
 	var subdoc = svg.contentDocument;
+	
+	var mycirc = subdoc.getElementById('p1');
 
+	mycirc.setAttribute('fill', 'lime');
+
+	console.log(mycirc);
+	
 	console.log(subdoc);
 });
 

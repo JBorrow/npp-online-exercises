@@ -41,6 +41,7 @@ $('#numProtons').on('input', function () {
 	numProtons = $('#numProtons').val();
 	if (numProtons > numberOfProtons) {
 		numProtons = numberOfProtons; // so we don't crash
+		changeProtons(protonSVG, numProtons);
 	} else {
 		changeProtons(protonSVG, numProtons);
 	}

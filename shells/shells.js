@@ -12,15 +12,22 @@ function getSVGById(id) {
 	return container.contentDocument;
 };
 
+function changeProton(id, color) {
+	try {
+		thisProton = protonSVG.getElementById('p' + id);
+		thisProton.style.fill = color;
+	} catch(err) {
+		// do nothing - we've probably run out of protons
+	}
+}
+
 function changeProtons(protonSVG, numToChange, color='red', emptyColor='white') {
 	for (i = 1; i <= numToChange; i++) {
-		thisProton = protonSVG.getElementById('p' + i);
-		thisProton.style.fill = color;
+		changeProton(i, color);
 	};
 
 	for (i = numToChange+1; i <= numberOfProtons; i++) { // to ensure using lower numbers displays correctly
-		thisProton = protonSVG.getElementById('p' + i);
-		thisProton.style.fill = emptyColor;
+		changeProton(i, emptyColor);
 	};
 };
 

@@ -4,20 +4,16 @@
 
 
 var svg;
+var numberOfProtons = 8;
 
 $('#protons').on('load', function () {
-	svg = document.getElementById("protons");
+	protonContainer = document.getElementById("protons");
 
-	console.log(svg);
+	var protonSVG = protonContainer.contentDocument;
 
-	var subdoc = svg.contentDocument;
-	
-	var mycirc = subdoc.getElementById('p1');
-
-	mycirc.style.fill='lime';
-
-	console.log(mycirc);
-	
-	console.log(subdoc);
+	for (i = 1; i <= numberOfProtons; i++) {
+		thisProton = protonSVG.getElementById('p' + i);
+		thisProton.style.fill = 'white'; // initially have all empty
+	}
 });
 

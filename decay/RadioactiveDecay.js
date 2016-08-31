@@ -4,7 +4,6 @@ function sliderVals() {
 		na: $('#na').val(),
 		la: $('#la').val(),
 		lb: $('#lb').val(),
-		lc: $('#lc').val(),
 	}
 }
 
@@ -23,7 +22,7 @@ function timeEvo(params, tmax=10., n=1000) {
 		var time = times[i];
 		Na[i] = Na[i-1] - params.la*dt*Na[i-1]; // A->B
 		Nb[i] = Nb[i-1] + params.la*Na[i-1]*dt - params.lb*Nb[i-1]*dt; // B->C
-		Nc[i] = Nc[i-1] + params.lb*Nb[i-1]*dt - params.lc*Nc[i-1]*dt; // C->na
+		Nc[i] = Nc[i-1] + params.lb*Nb[i-1]*dt
 	}
 
 	return {

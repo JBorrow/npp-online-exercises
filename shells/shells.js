@@ -14,7 +14,7 @@ $('#protons').on('load', function () {
 	
 	var mycirc = subdoc.getElementById('p1');
 
-	mycirc.setAttribute('fill', 'lime');
+	mycirc.setAttribute("fill", "lime");
 
 	console.log(mycirc);
 	

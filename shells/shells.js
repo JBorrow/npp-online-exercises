@@ -25,7 +25,7 @@ $('#protons').on('load', function () {
 	changeProtons(protonSVG, numberOfProtons, 'white');
 });
 
-$('#numProtons').on('change', function () {
+$('#numProtons').on('input', function () {
 	numProtons = $('#numProtons').val();
 	changeProtons(protonSVG, numProtons, 'red');
 });

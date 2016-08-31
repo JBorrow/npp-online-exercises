@@ -1,0 +1,66 @@
+<html>
+<head>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/numeric/1.2.6/numeric.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.min.js"></script>
+	<script type="text/javascript" async
+	  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+	</script>
+	<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+	  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+	});
+	</script>
+	<script src="RadioactiveDecay.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<style>
+		.container {
+			max-width:60em;
+		}
+	</style>
+</head>
+
+<body>
+<div class='container'>
+<h1> Radioactive Decay </h1>
+
+	<p>This section teaches you about the decay equation:
+	$$
+		\frac{\mathrm{d}N}{\mathrm{d}t} = -\lambda N~,
+	$$
+	where $N$ is the number of atoms, and $\lambda$ is the 'decay constant'.
+	</p>
+
+	<p>Here we study the process where atom A (yellow) decays to atom B (blue) which eventually decays to atom C (red) which then also decays itself to a product we don't really care about. Have a play with the numbers.</p>
+
+	<form>
+		<div class='form-group row'>
+			<label for="na" class='col-xs-2'>Number of initial A atoms</label>
+			<input id="na" type='number' class='col-xs-10'></input>
+		</div>
+		<div class='form-group row'>
+			<label for="la" class='col-xs-2'>$\lambda_A$</label>
+			<input class="lambda col-xs-10" id="la" type='number'></input>
+		</div>
+		<div class='form-group row'>
+			<label for="lb" class='col-xs-2'>$\lambda_B$</label>
+			<input class="lambda col-xs-10" id="lb" type='number'></input>
+		</div>
+		<div class='form-group row'>
+			<label for="lc" class='col-xs-2'>$\lambda_C$</label>	
+			<input class="lambda col-xs-10" id="lc" type='number'></input>
+		</div>
+		<div class='form-group row'>
+
+			<br/>
+
+			<div id="submit" style='background-color:#DDD; padding:1em;'>Submit</button>
+
+		</div>
+	</form>
+	<br/>
+	<div id="placeholder" class="demo-placeholder" style="width:auto;height:600px;"></div>
+</div>

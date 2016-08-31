@@ -9,7 +9,7 @@ var numberOfProtons = 8;
 function getSVGById(id) {
 	container = document.getElementById(id);
 
-	return protonContainer.contentDocument;
+	return container.contentDocument;
 };
 
 function changeProtons(protonSVG, numToChange, color) {

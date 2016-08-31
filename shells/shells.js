@@ -12,17 +12,22 @@ function getSVGById(id) {
 	return container.contentDocument;
 };
 
-function changeProtons(protonSVG, numToChange, color) {
+function changeProtons(protonSVG, numToChange, color, emptyColor='white') {
 	for (i = 1; i <= numToChange; i++) {
 		thisProton = protonSVG.getElementById('p' + i);
 		thisProton.style.fill = color;
-	}
+	};
+
+	for (i = numToChange; i <= numberOfProtons; i++) { // to ensure using lower numbers displays correctly
+		thisProton = protonSVG.getElementById('p' + i);
+		thisProton.style.fill = emptyColor;
+	};
 };
 
 //initially, we must wait for the SVG to load NOT the document.
 $('#protons').on('load', function () {
 	protonSVG = getSVGById('protons');
-	changeProtons(protonSVG, numberOfProtons, 'white');
+	changeProtons(protonSVG, 0, 'white');
 });
 
 $('#numProtons').on('input', function () {

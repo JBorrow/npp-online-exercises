@@ -1,0 +1,17 @@
+// Connect to the svg in shells.html
+// 
+// For more information, see http://www.petercollingridge.co.uk/data-visualisation/using-javascript-control-svg
+
+
+var svg;
+
+$('#protons').on('load', function () {
+	svg = document.getElementById("protons");
+
+	console.log(svg);
+
+	var subdoc = svg.contentDocument;
+
+	console.log(subdoc);
+});
+

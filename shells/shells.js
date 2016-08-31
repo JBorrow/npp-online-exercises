@@ -6,14 +6,26 @@
 var svg;
 var numberOfProtons = 8;
 
-$('#protons').on('load', function () {
-	protonContainer = document.getElementById("protons");
+function getSVGById(id) {
+	container = document.getElementById(id);
 
-	var protonSVG = protonContainer.contentDocument;
+	return protonContainer.contentDocument;
+};
 
-	for (i = 1; i <= numberOfProtons; i++) {
+function changeProtons(protonSVG, numToChange, color) {
+	for (i = 1; i <= numToChange; i++) {
 		thisProton = protonSVG.getElementById('p' + i);
-		thisProton.style.fill = 'white'; // initially have all empty
+		thisProton.style.fill = color;
 	}
+};
+
+//initially, we must wait for the SVG to load NOT the document.
+$('#protons').on('load', function () {
+	protonSVG = getSVGById('protons');
+	changeProtons(protonSVG, numberOfProtons, 'white');
 });
 
+$('#numProtons').on('change', function () {
+	numProtons = $('#numProtons').val();
+	changeProtons(protonSVG, numProtons, 'red');
+};

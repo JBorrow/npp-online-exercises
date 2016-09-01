@@ -5,6 +5,7 @@
 
 var svg;
 var numberOfProtons = 126;
+var numberOfNeutrons = 126;
 
 function getSVGById(id) {
 	container = document.getElementById(id);
@@ -12,37 +13,50 @@ function getSVGById(id) {
 	return container.contentDocument;
 };
 
-function changeProton(id, color) {
+function changeItem(thisSVG, id, color, subId) {
 	try {
-		thisProton = protonSVG.getElementById('p' + id);
-		thisProton.style.fill = color;
+		thisItem = thisSVG.getElementById(subId + id);
+		thisItem.style.fill = color;
 	} catch(err) {
-		// do nothing - we've probably run out of protons
+		// do nothing - we've probably run out of protons/neutrons
 	}
 }
 
-function changeProtons(protonSVG, numToChange, color='red', emptyColor='white') {
+function changeItems(thisSVG, numToChange, maxNum, subId, color='red', emptyColor='white') {
 	for (i = 1; i <= numToChange; i++) {
-		changeProton(i, color);
+		changeItem(thisSVG, i, color, subId);
 	};
 
-	for (i = numToChange+1; i <= numberOfProtons; i++) { // to ensure using lower numbers displays correctly
-		changeProton(i, emptyColor);
+	for (i = numToChange+1; i <= maxNum; i++) { // to ensure using lower numbers displays correctly
+		changeItem(thisSVG, i, emptyColor, subId);
 	};
 };
 
 //initially, we must wait for the SVG to load NOT the document.
 $('#protons').on('load', function () {
 	protonSVG = getSVGById('protons');
-	changeProtons(protonSVG, 0);
+	neutronSVG = getSVGById('neutrons');
+	changeItems(protonSVG, 0, numberOfProtons, 'p');
+	changeItems(neutronSVG, 0, numberOfNeutrons, 'n');
 });
 
 $('#numProtons').on('input', function () {
 	numProtons = $('#numProtons').val();
 	if (numProtons > numberOfProtons) {
 		numProtons = numberOfProtons; // so we don't crash
-		changeProtons(protonSVG, numProtons);
 	} else {
-		changeProtons(protonSVG, numProtons);
+		// all ok
 	}
+	changeItems(protonSVG, numProtons, numberOfProtons, 'p');
+});
+
+
+$('#numNeutrons').on('input', function () {
+	numNeutrons= $('#numNeutrons').val();
+	if (numNeutrons > numberOfNeutrons) {
+		numNeutrons = numberOfNeutrons; // so we don't crash
+	} else {
+		// all ok
+	}
+	changeItems(neutronSVG, numNeutrons, numberOfNeutrons, 'n');
 });

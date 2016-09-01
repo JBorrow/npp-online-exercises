@@ -58,5 +58,5 @@ $('#numNeutrons').on('input', function () {
 	} else {
 		// all ok
 	}
-	changeItems(neutronSVG, numNeutrons, numberOfNeutrons, 'n');
+	changeItems(neutronSVG, numNeutrons, numberOfNeutrons, 'n', color='black');
 });

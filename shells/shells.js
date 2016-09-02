@@ -27,6 +27,8 @@ var protonStructure = {
 	p1h9 : 10,
 };	
 
+console.log(protonStructure);
+
 function getSVGById(id) {
 	container = document.getElementById(id);
 
@@ -59,6 +61,7 @@ function findWhere(n, structure) {
 		console.log(key);
 		if (n < soFar) {
 			soFar = soFar + structure[key];
+			console.log(soFar);
 		} else {
 			return key;
 		}

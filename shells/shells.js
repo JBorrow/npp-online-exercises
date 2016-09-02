@@ -57,8 +57,8 @@ function findWhere(n, structure) {
 	var soFar = 0;
 	for (key in structure) {
 		console.log(key);
-		if (n > soFar) {
-			soFar = soFar + n;
+		if (n < soFar) {
+			soFar = soFar + structure[key];
 		} else {
 			return key;
 		}

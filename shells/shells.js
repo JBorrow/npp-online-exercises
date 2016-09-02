@@ -27,7 +27,25 @@ var protonStructure = {
 	p1h9 : 10,
 };	
 
-console.log(protonStructure);
+var neutronStructure = {
+	p1s1 : 2,
+	p1p3 : 4,
+	p1p1 : 2,
+	p1d5 : 6,
+	p2s1 : 2,
+	p1d3 : 4,
+	p1f7 : 8,
+	p2p3 : 4,
+	p1f5 : 6,
+	p2p1 : 2,
+	p1g9 : 10,
+	p2d5 : 6,
+	p1g7 : 8,
+	p1h11 : 12,
+	p2d3 : 4,
+	p3s1 : 2,
+	p1h9 : 10,
+};	
 
 function getSVGById(id) {
 	container = document.getElementById(id);
@@ -58,10 +76,8 @@ function findWhere(n, structure) {
 	// Where is the final nucleon?
 	var soFar = 0;
 	for (key in structure) {
-		console.log(key);
 		if (n > soFar + structure[key]) {
 			soFar = soFar + structure[key];
-			console.log(soFar);
 		} else {
 			return key;
 		}
@@ -98,4 +114,5 @@ $('#numNeutrons').on('input', function () {
 		// all ok
 	}
 	changeItems(neutronSVG, numNeutrons, numberOfNeutrons, 'n', color='black');
+	console.log(findWhere(numNeutrons, neutronStructure));
 });

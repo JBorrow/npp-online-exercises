@@ -36,7 +36,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.99999998"
      inkscape:cx="-221.26064"
-     inkscape:cy="568.24768"
+     inkscape:cy="208.24767"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -2197,96 +2197,108 @@
          x="439.98666"
          id="tspan4329"
          sodipodi:role="line">2</tspan></text>
-    <flowRoot
-       xml:space="preserve"
-       id="flowRoot4331"
-       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Inconsolata for Powerline;-inkscape-font-specification:Inconsolata for Powerline Medium;stroke-width:0.49999999;stroke-miterlimit:4;stroke-dasharray:none"
-       transform="translate(95.513204,20.023119)"><flowRegion
-         id="flowRegion4333"><rect
-           id="rect4335"
-           width="175.25"
-           height="50.5"
-           x="149.75"
-           y="25.99999"
-           style="stroke-width:0.49999999;stroke-miterlimit:4;stroke-dasharray:none" /></flowRegion><flowPara
-         id="flowPara4337"
-         style="font-size:24px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Inconsolata for Powerline;-inkscape-font-specification:Inconsolata for Powerline Bold;stroke-width:0.49999999;stroke-miterlimit:4;stroke-dasharray:none">PROTONS</flowPara></flowRoot>    <flowRoot
+    <g
+       transform="translate(95.513204,20.023119)"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Inconsolata for Powerline;-inkscape-font-specification:Inconsolata for Powerline Medium"
+       id="flowRoot4331">
+      <path
+         d="m 196.791,33.793455 0,14.952 1.728,0 0,-6.6 2.952,0 c 0.936,0 1.824,-0.024 2.736,-0.48 1.392,-0.696 2.112,-2.160002 2.112,-3.672 0,-1.511999 -0.744,-2.976001 -2.16,-3.696 -0.936,-0.48 -1.848,-0.504 -2.808,-0.504 l -4.56,0 m 1.728,1.56 2.832,0 c 0.624,0 1.224,0.024 1.824,0.336 0.936,0.479999 1.416,1.416001 1.416,2.4 0,0.959999 -0.456,1.848 -1.32,2.28 -0.576,0.287999 -1.176,0.312 -1.752,0.312 l -3.024,0 0.024,-5.328"
+         style="font-size:24px;font-weight:bold;text-align:center;text-anchor:middle;font-family:Inconsolata for Powerline;-inkscape-font-specification:Inconsolata for Powerline Bold"
+         id="path3311" />
+      <path
+         d="m 208.719,33.793455 0,14.952 1.704,0 0,-6.6 2.904,0 3.312,6.6 1.872,0 -3.456,-6.672 c 1.824,-0.504 3.048,-2.184002 3.048,-4.176 0,-1.487999 -0.744,-2.904001 -2.112,-3.6 -0.96,-0.48 -1.896,-0.504 -2.856,-0.504 l -4.416,0 m 1.704,1.56 2.712,0 c 0.624,0 1.224,0.024 1.824,0.336 0.936,0.479999 1.416,1.416001 1.416,2.4 0,0.959999 -0.456,1.848 -1.32,2.28 -0.576,0.287999 -1.152,0.312 -1.728,0.312 l -2.904,0 0,-5.328"
+         style="font-size:24px;font-weight:bold;text-align:center;text-anchor:middle;font-family:Inconsolata for Powerline;-inkscape-font-specification:Inconsolata for Powerline Bold"
+         id="path3313" />
+      <path
+         d="m 230.679,41.305455 c 0,-1.391999 -0.096,-3.288002 -0.912,-4.872 -0.984,-1.919999 -2.688,-2.808 -4.32,-2.808 -2.232,0 -5.376,1.752005 -5.376,7.632 0,5.879994 3.12,7.704 5.4,7.704 1.608,0 3.336,-0.888002 4.32,-2.88 0.792,-1.607999 0.888,-3.456002 0.888,-4.776 m -5.304,-6.096 c 1.056,0 2.352,0.624001 3.048,2.352 0.504,1.247998 0.576,2.688001 0.576,3.96 0,0.983999 -0.048,2.496001 -0.648,3.792 -0.696,1.463998 -1.872,2.016 -2.88,2.016 -1.68,0 -3.744,-1.560005 -3.744,-6.312 0,-4.463996 2.088,-5.808 3.648,-5.808"
+         style="font-size:24px;font-weight:bold;text-align:center;text-anchor:middle;font-family:Inconsolata for Powerline;-inkscape-font-specification:Inconsolata for Powerline Bold"
+         id="path3315" />
+      <path
+         d="m 232.119,33.769455 0,1.512 4.248,0 0,13.488 1.704,0 0,-13.488 4.392,0 0,-1.512 -10.344,0"
+         style="font-size:24px;font-weight:bold;text-align:center;text-anchor:middle;font-family:Inconsolata for Powerline;-inkscape-font-specification:Inconsolata for Powerline Bold"
+         id="path3317" />
+      <path
+         d="m 254.679,41.305455 c 0,-1.391999 -0.096,-3.288002 -0.912,-4.872 -0.984,-1.919999 -2.688,-2.808 -4.32,-2.808 -2.232,0 -5.376,1.752005 -5.376,7.632 0,5.879994 3.12,7.704 5.4,7.704 1.608,0 3.336,-0.888002 4.32,-2.88 0.792,-1.607999 0.888,-3.456002 0.888,-4.776 m -5.304,-6.096 c 1.056,0 2.352,0.624001 3.048,2.352 0.504,1.247998 0.576,2.688001 0.576,3.96 0,0.983999 -0.048,2.496001 -0.648,3.792 -0.696,1.463998 -1.872,2.016 -2.88,2.016 -1.68,0 -3.744,-1.560005 -3.744,-6.312 0,-4.463996 2.088,-5.808 3.648,-5.808"
+         style="font-size:24px;font-weight:bold;text-align:center;text-anchor:middle;font-family:Inconsolata for Powerline;-inkscape-font-specification:Inconsolata for Powerline Bold"
+         id="path3319" />
+      <path
+         d="m 256.575,48.745455 1.608,0 0,-11.76 6.6,11.784 1.32,0 0,-14.352 c 0,-0.168 0.048,-0.240001 0.096,-0.336 0.024,-0.048 0.096,-0.168001 0.072,-0.312 l -1.776,0 0,11.088 -6.288,-11.064 -1.632,0 0,14.952"
+         style="font-size:24px;font-weight:bold;text-align:center;text-anchor:middle;font-family:Inconsolata for Powerline;-inkscape-font-specification:Inconsolata for Powerline Bold"
+         id="path3321" />
+      <path
+         d="m 277.815,35.569455 c -1.008,-1.199999 -2.52,-1.848 -4.152,-1.848 -2.688,0 -4.56,1.776002 -4.56,3.816 0,0.863999 0.36,1.992 1.608,2.928 1.392,1.007999 3.528,1.56 4.656,2.256 0.984,0.599999 1.272,1.368 1.272,2.04 0,1.295998 -1.104,2.712 -3.264,2.712 -1.632,0 -2.904,-0.792001 -3.576,-1.632 -0.072,-0.096 -0.072,-0.168001 -0.072,-0.264 0,-0.024 0,-0.192001 -0.12,-0.24 l -0.984,1.728 c 1.176,1.271998 2.856,1.92 4.704,1.92 3.648,0 4.968,-2.400002 4.968,-4.296 0,-0.792 -0.216,-1.848001 -1.152,-2.736 -1.296,-1.223999 -3.408,-1.656001 -4.776,-2.448 -1.248,-0.72 -1.536,-1.632001 -1.536,-2.232 0,-1.151999 0.984,-2.184 2.688,-2.184 1.392,0 2.472,0.648 3.048,1.488 0.048,0.096 0.072,0.12 0.072,0.216 0,0.119999 0.072,0.216 0.12,0.216 l 1.056,-1.44"
+         style="font-size:24px;font-weight:bold;text-align:center;text-anchor:middle;font-family:Inconsolata for Powerline;-inkscape-font-specification:Inconsolata for Powerline Bold"
+         id="path3323" />
+    </g>
+    <g
        transform="translate(95.513204,128.21046)"
-       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;font-family:Inconsolata for Powerline;-inkscape-font-specification:Inconsolata for Powerline Medium;stroke-opacity:1;stroke-width:0.49999999;stroke-miterlimit:4;stroke-dasharray:none"
-       id="flowRoot4339"
-       xml:space="preserve"><flowRegion
-         id="flowRegion4341"><rect
-           y="25.99999"
-           x="149.75"
-           height="50.5"
-           width="175.25"
-           id="rect4343"
-           style="stroke:#000000;stroke-opacity:1;stroke-width:0.49999999;stroke-miterlimit:4;stroke-dasharray:none" /></flowRegion><flowPara
-         style="font-size:24px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Inconsolata for Powerline;-inkscape-font-specification:Inconsolata for Powerline Bold;stroke:#000000;stroke-opacity:1;stroke-width:0.49999999;stroke-miterlimit:4;stroke-dasharray:none"
-         id="flowPara4345">82</flowPara></flowRoot>    <flowRoot
-       xml:space="preserve"
-       id="flowRoot4347"
-       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;font-family:Inconsolata for Powerline;-inkscape-font-specification:Inconsolata for Powerline Medium;stroke-opacity:1;stroke-width:0.49999999;stroke-miterlimit:4;stroke-dasharray:none"
-       transform="translate(95.513204,293.67345)"><flowRegion
-         id="flowRegion4349"><rect
-           id="rect4351"
-           width="175.25"
-           height="50.5"
-           x="149.75"
-           y="25.99999"
-           style="stroke:#000000;stroke-opacity:1;stroke-width:0.49999999;stroke-miterlimit:4;stroke-dasharray:none" /></flowRegion><flowPara
-         id="flowPara4353"
-         style="font-size:24px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Inconsolata for Powerline;-inkscape-font-specification:Inconsolata for Powerline Bold;stroke:#000000;stroke-opacity:1;stroke-width:0.49999999;stroke-miterlimit:4;stroke-dasharray:none">50</flowPara></flowRoot>    <flowRoot
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-opacity:1;font-family:Inconsolata for Powerline;-inkscape-font-specification:Inconsolata for Powerline Medium"
+       id="flowRoot4339">
+      <path
+         d="m 231.567,33.601455 c -2.28,0 -4.032,1.656002 -4.032,3.672 0,1.487998 0.936,2.808 2.28,3.504 -1.776,0.839999 -3,2.472001 -3,4.2 0,2.231997 1.992,4.008 4.56,4.008 2.616,0 4.584,-1.824003 4.584,-4.104 0,-1.751999 -1.2,-3.360001 -2.88,-4.128 1.464,-0.768 2.376,-2.160002 2.376,-3.6 0,-1.967998 -1.704,-3.552 -3.888,-3.552 m -0.504,7.872 c 1.92,0.599999 3.216,1.920001 3.216,3.384 0,1.439998 -1.248,2.616 -2.832,2.616 -1.632,0 -2.904,-1.224002 -2.904,-2.712 0,-1.415999 1.104,-2.712001 2.52,-3.288 m 0.384,-6.456 c 1.344,0 2.376,0.984001 2.376,2.232 0,1.151998 -0.888,2.28 -2.04,2.904 0,0 -2.64,-1.008002 -2.64,-3 0,-1.175999 1.008,-2.136 2.304,-2.136"
+         style="font-size:24px;font-weight:bold;text-align:center;text-anchor:middle;stroke:#000000;font-family:Inconsolata for Powerline;-inkscape-font-specification:Inconsolata for Powerline Bold"
+         id="path3305" />
+      <path
+         d="m 239.247,36.121455 1.2,0.96 c 0.144,-0.192 0.096,-0.360001 0.216,-0.552 0.36,-0.552 1.272,-1.344 2.568,-1.344 1.584,0 2.856,1.224001 2.856,2.832 0,1.823998 -1.536,3.120001 -2.616,4.104 -1.704,1.535998 -3.096,3.072002 -4.344,5.568 l 0,1.056 8.784,0 0,-1.68 c -0.144,-0.048 -0.264,0.072 -0.312,0.12 -0.096,0.072 -0.168,0.096 -0.264,0.096 l -6.264,0 c 1.248,-2.183998 2.976,-3.672001 4.056,-4.68 1.104,-1.031999 2.64,-2.544003 2.64,-4.704 0,-2.327998 -1.896,-4.2 -4.344,-4.2 -1.704,0 -3.288,0.912001 -4.176,2.424"
+         style="font-size:24px;font-weight:bold;text-align:center;text-anchor:middle;stroke:#000000;font-family:Inconsolata for Powerline;-inkscape-font-specification:Inconsolata for Powerline Bold"
+         id="path3308" />
+    </g>
+    <g
+       transform="translate(95.513204,293.67345)"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-opacity:1;font-family:Inconsolata for Powerline;-inkscape-font-specification:Inconsolata for Powerline Medium"
+       id="flowRoot4347">
+      <path
+         d="m 227.919,33.793455 -0.528,7.608 1.08,0.432 c 0.72,-0.912 1.8,-1.416 2.808,-1.416 1.56,0 3.072,1.200002 3.072,3.576 0,2.303997 -1.416,3.552 -3.024,3.552 -1.608,0 -2.688,-1.224001 -2.76,-1.368 -0.096,-0.192 0.048,-0.432001 -0.168,-0.576 l -1.488,1.128 c 1.008,1.463998 2.664,2.28 4.44,2.28 2.592,0 4.704,-1.752004 4.704,-4.992 0,-3.191997 -2.016,-4.992 -4.512,-4.992 -0.816,0 -1.68,0.216 -2.448,0.6 l 0.24,-4.32 6.168,0 0,-1.512 -7.584,0"
+         style="font-size:24px;font-weight:bold;text-align:center;text-anchor:middle;stroke:#000000;font-family:Inconsolata for Powerline;-inkscape-font-specification:Inconsolata for Powerline Bold"
+         id="path3300" />
+      <path
+         d="m 243.399,33.697455 c -2.376,0 -4.824,2.904004 -4.824,7.68 0,4.847995 2.472,7.632 4.848,7.632 2.16,0 4.752,-2.352006 4.752,-7.488 0,-5.111995 -2.472,-7.824 -4.776,-7.824 m 2.352,3.408 -5.28,6.816 c -0.216,-0.816 -0.336,-1.776002 -0.336,-2.832 0,-3.815997 1.752,-5.928 3.24,-5.928 0.816,0 1.728,0.624001 2.376,1.944 m 0.552,1.608 c 0.192,0.839999 0.312,1.848001 0.312,3 0,4.175995 -1.8,5.76 -3.12,5.76 -0.888,0 -1.824,-0.720002 -2.472,-2.04 l 5.28,-6.72"
+         style="font-size:24px;font-weight:bold;text-align:center;text-anchor:middle;stroke:#000000;font-family:Inconsolata for Powerline;-inkscape-font-specification:Inconsolata for Powerline Bold"
+         id="path3302" />
+    </g>
+    <g
        transform="translate(95.513204,409.96634)"
-       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;font-family:Inconsolata for Powerline;-inkscape-font-specification:Inconsolata for Powerline Medium;stroke-opacity:1;stroke-width:0.49999999;stroke-miterlimit:4;stroke-dasharray:none"
-       id="flowRoot4355"
-       xml:space="preserve"><flowRegion
-         id="flowRegion4357"><rect
-           y="25.99999"
-           x="149.75"
-           height="50.5"
-           width="175.25"
-           id="rect4359"
-           style="stroke:#000000;stroke-opacity:1;stroke-width:0.49999999;stroke-miterlimit:4;stroke-dasharray:none" /></flowRegion><flowPara
-         style="font-size:24px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Inconsolata for Powerline;-inkscape-font-specification:Inconsolata for Powerline Bold;stroke:#000000;stroke-opacity:1;stroke-width:0.49999999;stroke-miterlimit:4;stroke-dasharray:none"
-         id="flowPara4361">28</flowPara></flowRoot>    <flowRoot
-       xml:space="preserve"
-       id="flowRoot4363"
-       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;font-family:Inconsolata for Powerline;-inkscape-font-specification:Inconsolata for Powerline Medium;stroke-opacity:1;stroke-width:0.49999999;stroke-miterlimit:4;stroke-dasharray:none"
-       transform="translate(95.513204,471.48463)"><flowRegion
-         id="flowRegion4365"><rect
-           id="rect4367"
-           width="175.25"
-           height="50.5"
-           x="149.75"
-           y="25.99999"
-           style="stroke:#000000;stroke-opacity:1;stroke-width:0.49999999;stroke-miterlimit:4;stroke-dasharray:none" /></flowRegion><flowPara
-         id="flowPara4369"
-         style="font-size:24px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Inconsolata for Powerline;-inkscape-font-specification:Inconsolata for Powerline Bold;stroke:#000000;stroke-opacity:1;stroke-width:0.49999999;stroke-miterlimit:4;stroke-dasharray:none">20</flowPara></flowRoot>    <flowRoot
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-opacity:1;font-family:Inconsolata for Powerline;-inkscape-font-specification:Inconsolata for Powerline Medium"
+       id="flowRoot4355">
+      <path
+         d="m 227.247,36.121455 1.2,0.96 c 0.144,-0.192 0.096,-0.360001 0.216,-0.552 0.36,-0.552 1.272,-1.344 2.568,-1.344 1.584,0 2.856,1.224001 2.856,2.832 0,1.823998 -1.536,3.120001 -2.616,4.104 -1.704,1.535998 -3.096,3.072002 -4.344,5.568 l 0,1.056 8.784,0 0,-1.68 c -0.144,-0.048 -0.264,0.072 -0.312,0.12 -0.096,0.072 -0.168,0.096 -0.264,0.096 l -6.264,0 c 1.248,-2.183998 2.976,-3.672001 4.056,-4.68 1.104,-1.031999 2.64,-2.544003 2.64,-4.704 0,-2.327998 -1.896,-4.2 -4.344,-4.2 -1.704,0 -3.288,0.912001 -4.176,2.424"
+         style="font-size:24px;font-weight:bold;text-align:center;text-anchor:middle;stroke:#000000;font-family:Inconsolata for Powerline;-inkscape-font-specification:Inconsolata for Powerline Bold"
+         id="path3295" />
+      <path
+         d="m 243.567,33.601455 c -2.28,0 -4.032,1.656002 -4.032,3.672 0,1.487998 0.936,2.808 2.28,3.504 -1.776,0.839999 -3,2.472001 -3,4.2 0,2.231997 1.992,4.008 4.56,4.008 2.616,0 4.584,-1.824003 4.584,-4.104 0,-1.751999 -1.2,-3.360001 -2.88,-4.128 1.464,-0.768 2.376,-2.160002 2.376,-3.6 0,-1.967998 -1.704,-3.552 -3.888,-3.552 m -0.504,7.872 c 1.92,0.599999 3.216,1.920001 3.216,3.384 0,1.439998 -1.248,2.616 -2.832,2.616 -1.632,0 -2.904,-1.224002 -2.904,-2.712 0,-1.415999 1.104,-2.712001 2.52,-3.288 m 0.384,-6.456 c 1.344,0 2.376,0.984001 2.376,2.232 0,1.151998 -0.888,2.28 -2.04,2.904 0,0 -2.64,-1.008002 -2.64,-3 0,-1.175999 1.008,-2.136 2.304,-2.136"
+         style="font-size:24px;font-weight:bold;text-align:center;text-anchor:middle;stroke:#000000;font-family:Inconsolata for Powerline;-inkscape-font-specification:Inconsolata for Powerline Bold"
+         id="path3297" />
+    </g>
+    <g
+       transform="translate(95.513204,471.48463)"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-opacity:1;font-family:Inconsolata for Powerline;-inkscape-font-specification:Inconsolata for Powerline Medium"
+       id="flowRoot4363">
+      <path
+         d="m 227.247,36.121455 1.2,0.96 c 0.144,-0.192 0.096,-0.360001 0.216,-0.552 0.36,-0.552 1.272,-1.344 2.568,-1.344 1.584,0 2.856,1.224001 2.856,2.832 0,1.823998 -1.536,3.120001 -2.616,4.104 -1.704,1.535998 -3.096,3.072002 -4.344,5.568 l 0,1.056 8.784,0 0,-1.68 c -0.144,-0.048 -0.264,0.072 -0.312,0.12 -0.096,0.072 -0.168,0.096 -0.264,0.096 l -6.264,0 c 1.248,-2.183998 2.976,-3.672001 4.056,-4.68 1.104,-1.031999 2.64,-2.544003 2.64,-4.704 0,-2.327998 -1.896,-4.2 -4.344,-4.2 -1.704,0 -3.288,0.912001 -4.176,2.424"
+         style="font-size:24px;font-weight:bold;text-align:center;text-anchor:middle;stroke:#000000;font-family:Inconsolata for Powerline;-inkscape-font-specification:Inconsolata for Powerline Bold"
+         id="path3289" />
+      <path
+         d="m 243.399,33.697455 c -2.376,0 -4.824,2.904004 -4.824,7.68 0,4.847995 2.472,7.632 4.848,7.632 2.16,0 4.752,-2.352006 4.752,-7.488 0,-5.111995 -2.472,-7.824 -4.776,-7.824 m 2.352,3.408 -5.28,6.816 c -0.216,-0.816 -0.336,-1.776002 -0.336,-2.832 0,-3.815997 1.752,-5.928 3.24,-5.928 0.816,0 1.728,0.624001 2.376,1.944 m 0.552,1.608 c 0.192,0.839999 0.312,1.848001 0.312,3 0,4.175995 -1.8,5.76 -3.12,5.76 -0.888,0 -1.824,-0.720002 -2.472,-2.04 l 5.28,-6.72"
+         style="font-size:24px;font-weight:bold;text-align:center;text-anchor:middle;stroke:#000000;font-family:Inconsolata for Powerline;-inkscape-font-specification:Inconsolata for Powerline Bold"
+         id="path3292" />
+    </g>
+    <g
        transform="translate(95.513204,597.48463)"
-       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;font-family:Inconsolata for Powerline;-inkscape-font-specification:Inconsolata for Powerline Medium;stroke-opacity:1;stroke-width:0.49999999;stroke-miterlimit:4;stroke-dasharray:none"
-       id="flowRoot4371"
-       xml:space="preserve"><flowRegion
-         id="flowRegion4373"><rect
-           y="25.99999"
-           x="149.75"
-           height="50.5"
-           width="175.25"
-           id="rect4375"
-           style="stroke:#000000;stroke-opacity:1;stroke-width:0.49999999;stroke-miterlimit:4;stroke-dasharray:none" /></flowRegion><flowPara
-         style="font-size:24px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Inconsolata for Powerline;-inkscape-font-specification:Inconsolata for Powerline Bold;stroke:#000000;stroke-opacity:1;stroke-width:0.49999999;stroke-miterlimit:4;stroke-dasharray:none"
-         id="flowPara4377">8</flowPara></flowRoot>    <flowRoot
-       xml:space="preserve"
-       id="flowRoot4379"
-       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;font-family:Inconsolata for Powerline;-inkscape-font-specification:Inconsolata for Powerline Medium;stroke-opacity:1;stroke-width:0.49999999;stroke-miterlimit:4;stroke-dasharray:none"
-       transform="translate(95.513204,721.48463)"><flowRegion
-         id="flowRegion4381"><rect
-           id="rect4383"
-           width="175.25"
-           height="50.5"
-           x="149.75"
-           y="25.99999"
-           style="stroke:#000000;stroke-opacity:1;stroke-width:0.49999999;stroke-miterlimit:4;stroke-dasharray:none" /></flowRegion><flowPara
-         id="flowPara4385"
-         style="font-size:24px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Inconsolata for Powerline;-inkscape-font-specification:Inconsolata for Powerline Bold;stroke:#000000;stroke-opacity:1;stroke-width:0.49999999;stroke-miterlimit:4;stroke-dasharray:none">2</flowPara></flowRoot>  </g>
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-opacity:1;font-family:Inconsolata for Powerline;-inkscape-font-specification:Inconsolata for Powerline Medium"
+       id="flowRoot4371">
+      <path
+         d="m 237.567,33.601455 c -2.28,0 -4.032,1.656002 -4.032,3.672 0,1.487998 0.936,2.808 2.28,3.504 -1.776,0.839999 -3,2.472001 -3,4.2 0,2.231997 1.992,4.008 4.56,4.008 2.616,0 4.584,-1.824003 4.584,-4.104 0,-1.751999 -1.2,-3.360001 -2.88,-4.128 1.464,-0.768 2.376,-2.160002 2.376,-3.6 0,-1.967998 -1.704,-3.552 -3.888,-3.552 m -0.504,7.872 c 1.92,0.599999 3.216,1.920001 3.216,3.384 0,1.439998 -1.248,2.616 -2.832,2.616 -1.632,0 -2.904,-1.224002 -2.904,-2.712 0,-1.415999 1.104,-2.712001 2.52,-3.288 m 0.384,-6.456 c 1.344,0 2.376,0.984001 2.376,2.232 0,1.151998 -0.888,2.28 -2.04,2.904 0,0 -2.64,-1.008002 -2.64,-3 0,-1.175999 1.008,-2.136 2.304,-2.136"
+         style="font-size:24px;font-weight:bold;text-align:center;text-anchor:middle;stroke:#000000;font-family:Inconsolata for Powerline;-inkscape-font-specification:Inconsolata for Powerline Bold"
+         id="path3286" />
+    </g>
+    <g
+       transform="translate(95.513204,721.48463)"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-opacity:1;font-family:Inconsolata for Powerline;-inkscape-font-specification:Inconsolata for Powerline Medium"
+       id="flowRoot4379">
+      <path
+         d="m 233.247,36.121455 1.2,0.96 c 0.144,-0.192 0.096,-0.360001 0.216,-0.552 0.36,-0.552 1.272,-1.344 2.568,-1.344 1.584,0 2.856,1.224001 2.856,2.832 0,1.823998 -1.536,3.120001 -2.616,4.104 -1.704,1.535998 -3.096,3.072002 -4.344,5.568 l 0,1.056 8.784,0 0,-1.68 c -0.144,-0.048 -0.264,0.072 -0.312,0.12 -0.096,0.072 -0.168,0.096 -0.264,0.096 l -6.264,0 c 1.248,-2.183998 2.976,-3.672001 4.056,-4.68 1.104,-1.031999 2.64,-2.544003 2.64,-4.704 0,-2.327998 -1.896,-4.2 -4.344,-4.2 -1.704,0 -3.288,0.912001 -4.176,2.424"
+         style="font-size:24px;font-weight:bold;text-align:center;text-anchor:middle;stroke:#000000;font-family:Inconsolata for Powerline;-inkscape-font-specification:Inconsolata for Powerline Bold"
+         id="path3283" />
+    </g>
+  </g>
 </svg>

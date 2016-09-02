@@ -56,6 +56,7 @@ function findWhere(n, structure) {
 	// Where is the final nucleon?
 	var soFar = 0;
 	for (key in structure) {
+		console.log(key);
 		if (n < soFar) {
 			soFar = soFar + n;
 		} else {

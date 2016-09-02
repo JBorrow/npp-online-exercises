@@ -54,6 +54,7 @@ function changeItems(thisSVG, numToChange, maxNum, subId, color='red', emptyColo
 
 function findWhere(n, structure) {
 	// Where is the final nucleon?
+	console.log(n);
 	var soFar = 0;
 	for (key in structure) {
 		console.log(key);

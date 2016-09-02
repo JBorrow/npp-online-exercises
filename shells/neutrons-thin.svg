@@ -79,9 +79,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2"
-     inkscape:cx="53.301211"
-     inkscape:cy="38.349596"
+     inkscape:zoom="5.6568542"
+     inkscape:cx="126.71709"
+     inkscape:cy="526.8985"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -933,7 +933,7 @@
        sodipodi:cy="289.39197"
        sodipodi:rx="4.2857141"
        sodipodi:ry="4.2857141"
-       transform="translate(-69.296466,0)" />
+       transform="translate(-69.296466,-11.313708)" />
     <circle
        r="4.2857141"
        cy="289.39197"
@@ -946,7 +946,7 @@
        sodipodi:cy="289.39197"
        sodipodi:rx="4.2857141"
        sodipodi:ry="4.2857141"
-       transform="translate(0,-11.667262)" />
+       transform="translate(27.798135,-0.04419439)" />
     <circle
        r="4.2857141"
        cy="289.39197"
@@ -959,7 +959,7 @@
        sodipodi:cy="289.39197"
        sodipodi:rx="4.2857141"
        sodipodi:ry="4.2857141"
-       transform="translate(13.788582,0)" />
+       transform="translate(0.30935911,0)" />
     <circle
        r="4.2857141"
        cy="289.39197"
@@ -972,7 +972,7 @@
        sodipodi:cy="289.39197"
        sodipodi:rx="4.2857141"
        sodipodi:ry="4.2857141"
-       transform="translate(-83.085048,-11.667262)" />
+       transform="translate(-96.608465,-11.22532)" />
     <circle
        style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="n69"

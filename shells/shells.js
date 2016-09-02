@@ -7,6 +7,26 @@ var svg;
 var numberOfProtons = 126;
 var numberOfNeutrons = 126;
 
+var protonStructure = {
+	p1s1 : 2,
+	p1p3 : 4,
+	p1p1 : 2,
+	p1d5 : 6,
+	p2s1 : 2,
+	p1d3 : 4,
+	p1f7 : 8,
+	p2p3 : 4,
+	p1f5 : 6,
+	p2p1 : 2,
+	p1g9 : 10,
+	p1g7 : 8,
+	p2d5 : 6,
+	p1h11 : 12,
+	p2d3 : 4,
+	p3s1 : 2,
+	p1h9 : 10,
+};	
+
 function getSVGById(id) {
 	container = document.getElementById(id);
 
@@ -32,6 +52,20 @@ function changeItems(thisSVG, numToChange, maxNum, subId, color='red', emptyColo
 	};
 };
 
+function findWhere(n, structure) {
+	// Where is the final nucleon?
+	var soFar = 0;
+	for (key in structure) {
+		if (n < soFar) {
+			soFar = soFar + n;
+		} else {
+			return key;
+		}
+	}
+	return "Sorry, out of range!";
+};
+
+
 //initially, we must wait for the SVG to load NOT the document.
 $('#protons').on('load', function () {
 	protonSVG = getSVGById('protons');
@@ -48,6 +82,7 @@ $('#numProtons').on('input', function () {
 		// all ok
 	}
 	changeItems(protonSVG, numProtons, numberOfProtons, 'p');
+	console.log(findWhere(numProtons, protonStructure));
 });
 
 

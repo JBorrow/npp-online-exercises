@@ -63,7 +63,7 @@ function changeItem(thisSVG, id, color, subId) {
 }
 
 function highlight(thisSVG, id, color='red') {
-	text = thisSVG.getElementById(id);
+	text = thisSVG.getElementById(id.substring(0, id.length -1));
 	line = thisSVG.getElementById(id + 'l');
 	text.style.fill = color;
 	line.style.stroke = color;

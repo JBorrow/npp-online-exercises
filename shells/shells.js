@@ -71,14 +71,14 @@ function highlight(thisSVG, id, allTheRest, color='red', otherColor='black') {
 			box = thisSVG.getElementById(key);
 			text.style.fill = otherColor;
 			line.style.stroke = otherColor;
-			box.style.stroke = '0px';
+			box.style['stroke-opacity'] = 0;
 		} else {
 			text = thisSVG.getElementById(id.substring(0, 3));
 			line = thisSVG.getElementById(id + 'l');
 			box = thisSVG.getElementById(id);
 			text.style.fill = color;
 			line.style.stroke = color;
-			box.style.stroke = '0.5px';
+			box.style['stroke-opacity'] = 1;
 		}
 	}
 };
@@ -113,6 +113,7 @@ $('#protons').on('load', function () {
 	neutronSVG = getSVGById('neutrons');
 	changeItems(protonSVG, 0, numberOfProtons, 'p');
 	changeItems(neutronSVG, 0, numberOfNeutrons, 'n');
+	highlight(protonSVG, 'none', protonStructure);
 });
 
 $('#numProtons').on('input', function () {

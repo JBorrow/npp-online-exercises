@@ -62,12 +62,22 @@ function changeItem(thisSVG, id, color, subId) {
 	}
 }
 
-function highlight(thisSVG, id, color='red') {
-	text = thisSVG.getElementById(id.substring(0, id.length -1));
-	line = thisSVG.getElementById(id + 'l');
-	text.style.fill = color;
-	line.style.stroke = color;
-}
+function highlight(thisSVG, id, allTheRest, color='red', otherColor='black') {
+	// ensures all those that are not highlighted are 'otherColor'.
+	for (key in allTheRest) {
+		if (key != id) {
+			text = thisSVG.getElementById(id.substring(0, id.length -1));
+			line = thisSVG.getElementById(id + 'l');
+			text.style.fill = otherColor;
+			line.style.stroke = otherColor;
+		} else {
+			text = thisSVG.getElementById(id.substring(0, id.length -1));
+			line = thisSVG.getElementById(id + 'l');
+			text.style.fill = color;
+			line.style.stroke = color;
+		}
+	}
+};
 
 function changeItems(thisSVG, numToChange, maxNum, subId, color='red', emptyColor='white') {
 	for (i = 1; i <= numToChange; i++) {
@@ -110,7 +120,7 @@ $('#numProtons').on('input', function () {
 	}
 	changeItems(protonSVG, numProtons, numberOfProtons, 'p');
 	maxLevel = findWhere(numProtons, protonStructure);
-	highlight(protonSVG, maxLevel);
+	highlight(protonSVG, maxLevel, protonStructure);
 });
 
 

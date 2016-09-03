@@ -62,6 +62,13 @@ function changeItem(thisSVG, id, color, subId) {
 	}
 }
 
+function highlight(thisSVG, id, color='red') {
+	text = thisSVG.getElementById(id);
+	line = thisSVG.getElementById(id + 'l');
+	text.style.fill = color;
+	line.style.stroke = color;
+}
+
 function changeItems(thisSVG, numToChange, maxNum, subId, color='red', emptyColor='white') {
 	for (i = 1; i <= numToChange; i++) {
 		changeItem(thisSVG, i, color, subId);
@@ -102,7 +109,8 @@ $('#numProtons').on('input', function () {
 		// all ok
 	}
 	changeItems(protonSVG, numProtons, numberOfProtons, 'p');
-	console.log(findWhere(numProtons, protonStructure));
+	maxLevel = findWhere(numProtons, protonStructure);
+	highlight(protonSVG, maxLevel);
 });
 
 

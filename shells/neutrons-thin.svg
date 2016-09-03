@@ -9,12 +9,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="266.47446"
-   height="770.27893"
+   width="266.47574"
+   height="770.28674"
    id="svg3317"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="New document 2">
+   sodipodi:docname="neutrons-thin.svg">
   <defs
      id="defs3319" />
   <sodipodi:namedview
@@ -26,7 +26,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
      inkscape:cx="345.38071"
-     inkscape:cy="245.13556"
+     inkscape:cy="245.14342"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -47,7 +47,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>

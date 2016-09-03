@@ -48,7 +48,11 @@ var neutronStructure = {
 };	
 
 function getSVGById(id) {
-	container = document.getElementById(id);
+	try {
+		container = document.getElementById(id);
+	} catch(e) {
+		console.log("Failed to get element " + id);
+	};
 
 	return container.contentDocument;
 };

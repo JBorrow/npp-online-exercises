@@ -66,12 +66,12 @@ function highlight(thisSVG, id, allTheRest, color='red', otherColor='black') {
 	// ensures all those that are not highlighted are 'otherColor'.
 	for (key in allTheRest) {
 		if (key != id) {
-			text = thisSVG.getElementById(key.substring(0, key.length -1));
+			text = thisSVG.getElementById(key.substring(0, 3));
 			line = thisSVG.getElementById(key + 'l');
 			text.style.fill = otherColor;
 			line.style.stroke = otherColor;
 		} else {
-			text = thisSVG.getElementById(id.substring(0, id.length -1));
+			text = thisSVG.getElementById(id.substring(0, 3));
 			line = thisSVG.getElementById(id + 'l');
 			text.style.fill = color;
 			line.style.stroke = color;

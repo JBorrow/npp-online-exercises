@@ -4,8 +4,8 @@
 
 
 var svg;
-var numberOfProtons = 126;
-var numberOfNeutrons = 126;
+var numberOfProtons = 92;
+var numberOfNeutrons = 92;
 
 var protonStructure = {
 	p1s1 : 2,
@@ -66,8 +66,8 @@ function highlight(thisSVG, id, allTheRest, color='red', otherColor='black') {
 	// ensures all those that are not highlighted are 'otherColor'.
 	for (key in allTheRest) {
 		if (key != id) {
-			text = thisSVG.getElementById(id.substring(0, id.length -1));
-			line = thisSVG.getElementById(id + 'l');
+			text = thisSVG.getElementById(key.substring(0, key.length -1));
+			line = thisSVG.getElementById(key + 'l');
 			text.style.fill = otherColor;
 			line.style.stroke = otherColor;
 		} else {

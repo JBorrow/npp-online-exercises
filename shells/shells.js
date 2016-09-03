@@ -68,13 +68,17 @@ function highlight(thisSVG, id, allTheRest, color='red', otherColor='black') {
 		if (key != id) {
 			text = thisSVG.getElementById(key.substring(0, 3));
 			line = thisSVG.getElementById(key + 'l');
+			box = thisSVG.getElementById(key);
 			text.style.fill = otherColor;
 			line.style.stroke = otherColor;
+			box.style.stroke = '0px';
 		} else {
 			text = thisSVG.getElementById(id.substring(0, 3));
 			line = thisSVG.getElementById(id + 'l');
+			box = thisSVG.getElementById(id);
 			text.style.fill = color;
 			line.style.stroke = color;
+			box.style.stroke = '0.5px';
 		}
 	}
 };

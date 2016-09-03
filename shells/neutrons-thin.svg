@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="345.38071"
-     inkscape:cy="245.14342"
+     inkscape:zoom="11.2"
+     inkscape:cx="298.52364"
+     inkscape:cy="1.4588963"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -34,11 +34,12 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="501"
-     inkscape:window-height="434"
-     inkscape:window-x="39"
-     inkscape:window-y="66"
-     inkscape:window-maximized="0" />
+     inkscape:window-width="1366"
+     inkscape:window-height="702"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     showborder="true" />
   <metadata
      id="metadata3322">
     <rdf:RDF>
@@ -2514,15 +2515,16 @@
        inkscape:label="#rect3292"
        y="333.36929"
        x="280.64221"
-       height="12.551137"
-       width="15.202797"
+       height="12.819005"
+       width="14.577789"
        id="n2p1"
-       style="fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+       style="fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       ry="0" />
     <rect
        style="fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="n1g9"
-       width="15.202789"
-       height="15.026021"
+       width="14.667075"
+       height="15.026031"
        x="280.64221"
        y="318.52005"
        inkscape:label="#rect3292" />

@@ -114,6 +114,7 @@ $('#protons').on('load', function () {
 	changeItems(protonSVG, 0, numberOfProtons, 'p');
 	changeItems(neutronSVG, 0, numberOfNeutrons, 'n');
 	highlight(protonSVG, 'none', protonStructure);
+	highlight(neutronSVG, 'none', neutronStructure);
 });
 
 $('#numProtons').on('input', function () {
@@ -137,5 +138,6 @@ $('#numNeutrons').on('input', function () {
 		// all ok
 	}
 	changeItems(neutronSVG, numNeutrons, numberOfNeutrons, 'n', color='black');
-	console.log(findWhere(numNeutrons, neutronStructure));
+	maxLevel = findWhere(numNeutrons, neutronStructure);
+	highlight(neutronSVG, maxLevel, neutronStructure);
 });

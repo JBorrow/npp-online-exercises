@@ -24,10 +24,12 @@
 	</head>
 
 	<body>
-		<div class='container'>
 			<div class='jumbotron' style='margin-top:2em;'>
-				<h1 class='display-3'>Shell Model Demo</h1>
+				<div class='container'>
+				<h1 class='display-3'>The Shell Model</h1>
+				</div>
 			</div>
+		<div class='container'>
 
 			<div class='row'>
 				<div class='col-xs-12'>
@@ -40,6 +42,7 @@
 			</div>
 
 		<div class='buttons'>
+			<h1>Interactive Shells</h1>
 			<form>
 				<div class='form-group row'>
 					<label for="numProtons" class='col-xs-4 col-form-label'>Number of Protons</label>

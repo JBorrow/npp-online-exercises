@@ -62,8 +62,8 @@ Using the fact that nucleons tend to pair we can extend this analysis to shells 
 
 The shell model gives predictions for even-even nuclei: they will all have $J^P=0^+$, for odd-even nuclei the spin and parity is given by the odd nucleon. The situation is more complicated for odd-odd nuclei where no clear prediction can be made from the shell model.  
 
-With the shell model we can also explain some of the spin and parity of excited levels of nuclei. Figure~\ref{fig:levelsNOOOF} shows the energies and $J^P$ quantum numbers of excitations of nuclei with proton and neutron numbers close to the magical number $8$. Let us look at these nuclei in turn. $\ce{^{16}O}$ has full shells for both neutrons and nucleons. It is therefore very stable and its ground state has $J^P=0^+$.
+With the shell model we can also explain some of the spin and parity of excited levels of nuclei. Figure~\ref{fig:levelsNOOOF} shows the energies and $J^P$ quantum numbers of excitations of nuclei with proton and neutron numbers close to the magical number $8$. Let us look at these nuclei in turn. ${^{16}O}$ has full shells for both neutrons and nucleons. It is therefore very stable and its ground state has $J^P=0^+$.
 
-$\ce{^{15}N}$ has 8 neutrons so the neutron $1s$ and $1p$ shells are full. It has 7 protons so we have a full $1s$ shell, a full $1p\_{3/2}$ shell but a hole in the $1p\_{1/2}$ shell. We therefore expect the spin and parity of the ground state to be $J=1/2$ and $P=(-1)^1=-1$.\footnote{One could have argued the other way and say the unpaired proton is in the $1p\_{1/2}$ shell, instead of looking for the shell of the hole.}
+${^{15}N}$ has 8 neutrons so the neutron $1s$ and $1p$ shells are full. It has 7 protons so we have a full $1s$ shell, a full $1p\_{3/2}$ shell but a hole in the $1p\_{1/2}$ shell. We therefore expect the spin and parity of the ground state to be $J=1/2$ and $P=(-1)^1=-1$.\footnote{One could have argued the other way and say the unpaired proton is in the $1p\_{1/2}$ shell, instead of looking for the shell of the hole.}
 
-$\ce{^{15}O}$ and $\ce{^{17}N}$ are called \emph{mirror nuclei} because they map into each other through swapping the protons with neutrons.
+${^{15}O}$ and ${^{17}N}$ are called \emph{mirror nuclei} because they map into each other through swapping the protons with neutrons.

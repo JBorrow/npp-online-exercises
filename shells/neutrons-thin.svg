@@ -35,8 +35,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="4"
-     inkscape:cx="117.89458"
-     inkscape:cy="721.06572"
+     inkscape:cx="118.39458"
+     inkscape:cy="561.06572"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -172,6 +172,19 @@
          d="m 247.86619,118.26525 170.00612,0"
          style="fill:none;stroke:#cbcbcb;stroke-width:4;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
     </g>
+    <circle
+       r="4.2857141"
+       cy="289.39197"
+       cx="367.85336"
+       id="n57"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:label="#circle6623"
+       d="m 372.13908,289.39197 c 0,2.36693 -1.91878,4.28571 -4.28572,4.28571 -2.36693,0 -4.28571,-1.91878 -4.28571,-4.28571 0,-2.36694 1.91878,-4.28572 4.28571,-4.28572 2.36694,0 4.28572,1.91878 4.28572,4.28572 z"
+       sodipodi:cx="367.85336"
+       sodipodi:cy="289.39197"
+       sodipodi:rx="4.2857141"
+       sodipodi:ry="4.2857141"
+       transform="translate(-83.711417,-11.667262)" />
     <circle
        style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.49999999;stroke-miterlimit:4;stroke-dasharray:none"
        id="circle6033"
@@ -849,19 +862,6 @@
     <circle
        r="4.2857141"
        cy="289.39197"
-       cx="367.85336"
-       id="n57"
-       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       inkscape:label="#circle6623"
-       d="m 372.13908,289.39197 c 0,2.36693 -1.91878,4.28571 -4.28572,4.28571 -2.36693,0 -4.28571,-1.91878 -4.28571,-4.28571 0,-2.36694 1.91878,-4.28572 4.28571,-4.28572 2.36694,0 4.28572,1.91878 4.28572,4.28572 z"
-       sodipodi:cx="367.85336"
-       sodipodi:cy="289.39197"
-       sodipodi:rx="4.2857141"
-       sodipodi:ry="4.2857141"
-       transform="translate(13.788582,-11.667262)" />
-    <circle
-       r="4.2857141"
-       cy="289.39197"
        cx="284.32657"
        id="n51"
        style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
@@ -1106,7 +1106,7 @@
        sodipodi:cy="277.77524"
        sodipodi:rx="4.2857141"
        sodipodi:ry="4.2857141"
-       transform="translate(-83.438599,0)" />
+       transform="translate(14.3114,0)" />
     <circle
        r="4.2857141"
        cy="277.77524"

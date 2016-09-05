@@ -113,12 +113,14 @@ function findWhere(n, structure) {
 
 //initially, we must wait for the SVG to load NOT the document.
 $('#neutrons').on('load', function () {
-	protonSVG = getSVGById('protons');
-	neutronSVG = getSVGById('neutrons');
-	changeItems(protonSVG, 0, numberOfProtons, 'p');
-	changeItems(neutronSVG, 0, numberOfNeutrons, 'n');
-	highlight(protonSVG, 'none', protonStructure);
-	highlight(neutronSVG, 'none', neutronStructure);
+	$('#protons').on('load', function () {
+		protonSVG = getSVGById('protons');
+		neutronSVG = getSVGById('neutrons');
+		changeItems(protonSVG, 0, numberOfProtons, 'p');
+		changeItems(neutronSVG, 0, numberOfNeutrons, 'n');
+		highlight(protonSVG, 'none', protonStructure);
+		highlight(neutronSVG, 'none', neutronStructure);
+	});
 });
 
 $('#numProtons').on('input', function () {

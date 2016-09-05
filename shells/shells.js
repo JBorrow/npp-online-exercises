@@ -4,8 +4,8 @@
 
 
 var svg;
-var numberOfProtons = 126;
-var numberOfNeutrons = 126;
+var numberOfProtons = 92;
+var numberOfNeutrons = 92;
 
 var protonStructure = {
 	p1s1 : 2,
@@ -48,7 +48,11 @@ var neutronStructure = {
 };	
 
 function getSVGById(id) {
-	container = document.getElementById(id);
+	try {
+		container = document.getElementById(id);
+	} catch(e) {
+		console.log("Failed to get element " + id);
+	};
 
 	return container.contentDocument;
 };
@@ -61,6 +65,27 @@ function changeItem(thisSVG, id, color, subId) {
 		// do nothing - we've probably run out of protons/neutrons
 	}
 }
+
+function highlight(thisSVG, id, allTheRest, color='red', otherColor='black') {
+	// ensures all those that are not highlighted are 'otherColor'.
+	for (key in allTheRest) {
+		if (key != id) {
+			text = thisSVG.getElementById(key.substring(0, 3));
+			line = thisSVG.getElementById(key + 'l');
+			box = thisSVG.getElementById(key);
+			text.style.fill = otherColor;
+			line.style.stroke = otherColor;
+			box.style['stroke-opacity'] = 0;
+		} else {
+			text = thisSVG.getElementById(id.substring(0, 3));
+			line = thisSVG.getElementById(id + 'l');
+			box = thisSVG.getElementById(id);
+			text.style.fill = color;
+			line.style.stroke = color;
+			box.style['stroke-opacity'] = 1;
+		}
+	}
+};
 
 function changeItems(thisSVG, numToChange, maxNum, subId, color='red', emptyColor='white') {
 	for (i = 1; i <= numToChange; i++) {
@@ -92,6 +117,8 @@ $('#protons').on('load', function () {
 	neutronSVG = getSVGById('neutrons');
 	changeItems(protonSVG, 0, numberOfProtons, 'p');
 	changeItems(neutronSVG, 0, numberOfNeutrons, 'n');
+	highlight(protonSVG, 'none', protonStructure);
+	highlight(neutronSVG, 'none', neutronStructure);
 });
 
 $('#numProtons').on('input', function () {
@@ -102,7 +129,8 @@ $('#numProtons').on('input', function () {
 		// all ok
 	}
 	changeItems(protonSVG, numProtons, numberOfProtons, 'p');
-	console.log(findWhere(numProtons, protonStructure));
+	maxLevel = findWhere(numProtons, protonStructure);
+	highlight(protonSVG, maxLevel, protonStructure);
 });
 
 
@@ -114,5 +142,6 @@ $('#numNeutrons').on('input', function () {
 		// all ok
 	}
 	changeItems(neutronSVG, numNeutrons, numberOfNeutrons, 'n', color='black');
-	console.log(findWhere(numNeutrons, neutronStructure));
+	maxLevel = findWhere(numNeutrons, neutronStructure);
+	highlight(neutronSVG, maxLevel, neutronStructure);
 });

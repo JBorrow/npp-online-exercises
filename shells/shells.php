@@ -19,6 +19,10 @@
 				margin-top:2em;
 			}
 
+			img {
+				width:75%;
+			}
+
 		</style>
 
 	</head>

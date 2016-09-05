@@ -1,9 +1,9 @@
 Background
 ==========
 
-So far we have investigated the mass and stability of nuclei, now we want to explore the structure of the nucleus in more details. We understand the effects of the mass number $A$ and the number of protons and neutrons $Z$ and $N$ on the strength of the binding of the nuclei but when we look at the energy it takes to excite nuclei to their first excited state we see that the largest excitation energies are concentrated around specific values of $N$ and $Z$, see below. 
+So far we have investigated the mass and stability of nuclei, now we want to explore the structure of the nucleus in more details. We understand the effects of the mass number $A$ and the number of protons and neutrons $Z$ and $N$ on the strength of the binding of the nuclei but when we look at the energy it takes to excite nuclei to their first excited state we see that the largest excitation energies are concentrated around specific values of $N$ and $Z$, see figure \ref{nuclei} below. 
 
-![Figure of Nuclei](figureOfNuclei.jpg)
+![Figure of Nuclei \label{nuclei}](figureOfNuclei.jpg)
 
 These numbers are called "magic" numbers. The shell model can explain these numbers. We already observed that the binding energy per nucleon had enhancements around the places corresponding to one of the proton or neutron number close to a magic number.
 

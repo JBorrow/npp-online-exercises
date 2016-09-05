@@ -37,7 +37,7 @@ according to the rules of angular momentum addition the possible values of $j$ a
 $$\left<\vec{l}\cdot\vec{s}\right>=\left\{\begin{array}{rcc}
 l/2&\mbox{for}& j=l+1/2\\\\
 -(l+1)/2&\mbox{for}& j=l-1/2
-\end{array}\right.$$
+\end{array}\right\}.$$
 As for the hydrogen atom, we can now label the levels with $n,l$ and $j$. The quantum number $l$ determines the parity of the state. The energy split between the two $j$ levels is given by
 $$
 \Delta E\_{SO,ls}=\left<V\_{ls}(r) \vec{l}\cdot\vec{s}\right>=

@@ -13,44 +13,44 @@ Potentials
 ----------
 
 If the potential can be approximated by an harmonic oscillator the energy would be given by the usual
-\[E=\left(2n+l-\frac{1}{2}\right)\omega\] 
+$$E=\left(2n+l-\frac{1}{2}\right)\omega$$ 
 If we approximate it as an infinite well potential we do not predict the experimentally observed levels.
 
 Unfortunately the actual nuclear potential is neither harmonic nor an infinite well. Since the nuclear force is very short range, the potential it creates should follow the density of nucleons in the nucleus. We will see later which form this density takes and how to measure it. Empirically we can use the following form 
-\[V(r)=-\frac{V_0}{1+e^{(r-r_0)/a}}\]
-with parameters $r_0$ and $a$ fitted from data. With this potential we obtain the levels shown in the central part of Figure~\ref{fig:levels}. This potential alone is not enough to describe the features that the mass spectrum of nuclides displays. Although the first magic numbers are predicted properly the gap between energy levels do not line up properly to explain the higher magic numbers.
+$$V(r)=-\frac{V\_0}{1+e^{(r-r\_0)/a}}$$
+with parameters $r\_0$ and $a$ fitted from data. With this potential we obtain the levels shown in the central part of Figure~\ref{fig:levels}. This potential alone is not enough to describe the features that the mass spectrum of nuclides displays. Although the first magic numbers are predicted properly the gap between energy levels do not line up properly to explain the higher magic numbers.
 
 To achieve the agreement with the data we need to consider an addition to the potential: the spin-orbit coupling. In the hydrogen atom electron energy levels the interaction caused by the spin-orbit term in the potential is responsible for the hydrogen fine structure. In the hydrogen case it is not a large effect. In the case of the shell model of the nucleus the effect is larger and does not only creates a splitting but actually reorders shells of different $n.l$ quantum numbers, which places the gabs in the energy levels at the right place to explain the magic numbers. The spin-orbit coupling term is given by 
-\[V_{SO}=V_{ls}(r)\left<\vec{l}\cdot\vec{s}\right>\] 
+$$V\_{SO}=V\_{ls}(r)\left<\vec{l}\cdot\vec{s}\right>$$ 
 We can calculate the expectation value of the expectation value of $\vec{l}\cdot\vec{s}$ as a function of the eigenvalues of the total angular momentum $j$:
-\[
+$$
 j(j+1)=\left<\vec{j}^2\right>=\left<(\vec{l}+\vec{s})^2\right>
 =
 \left<\vec{l}^2+2\vec{l}\cdot\vec{s}+\vec{s}^2\right>
 =l(l+1)+s(s+1)+2\left<\vec{l}\cdot\vec{s}\right>
-\]
-\[\Rightarrow
+$$
+$$\Rightarrow
 \left<\vec{l}\cdot\vec{s}\right>=\frac{j(j+1)-l(l+1)-s(s+1)}{2}
-\]
+$$
 according to the rules of angular momentum addition the possible values of $j$ are either $l+1/2$ of $l-1/2$ so we get
-\[\left<\vec{l}\cdot\vec{s}\right>=\left\{\begin{array}{rcc}
+$$\left<\vec{l}\cdot\vec{s}\right>=\left\{\begin{array}{rcc}
 l/2&\mbox{for}& j=l+1/2\\
 -(l+1)/2&\mbox{for}& j=l-1/2
-\end{array}\right.\]
+\end{array}\right.$$
 As for the hydrogen atom, we can now label the levels with $n,l$ and $j$. The quantum number $l$ determines the parity of the state. The energy split between the two $j$ levels is given by
-\[
-\Delta E_{SO,ls}=\left<V_{ls}(r) \vec{l}\cdot\vec{s}\right>=
-\left(\frac{l}{2}-\frac{-(l+1)}{2}\right)=\left<V_{ls}(r)\right>\frac{2l+1}{2}
-\]
-We find experimentally that the coefficient $\left<V_{ls}(r)\right>$ is negative so that unlike for the electron levels in the hydrogen the energy level with the higher value of $j$ is the lower lying one. The result of including this contribution is shown on the right of Figure~\ref{fig:levels} and result in splits between levels consistent with the magic numbers. 
+$$
+\Delta E\_{SO,ls}=\left<V\_{ls}(r) \vec{l}\cdot\vec{s}\right>=
+\left(\frac{l}{2}-\frac{-(l+1)}{2}\right)=\left<V\_{ls}(r)\right>\frac{2l+1}{2}
+$$
+We find experimentally that the coefficient $\left<V\_{ls}(r)\right>$ is negative so that unlike for the electron levels in the hydrogen the energy level with the higher value of $j$ is the lower lying one. The result of including this contribution is shown on the right of Figure~\ref{fig:levels} and result in splits between levels consistent with the magic numbers. 
 
 In practice the proton and neutron potentials can have slightly different shapes resulting in small differences in the ordering of the shells within a band, but not affecting the magic numbers, see Figure~\ref{fig:pnlevels}. 
 
 Spin and Parity
 ---------------
 
-Assuming that the potential is spherically symmetric we could express the angular part of the wave functions to be spherical harmonics $Y_{l,m}(\theta,\phi)$. These functions behaves as
-\[Y_{l,m}(\theta,\phi)\rightarrow (-1)^l Y_{l,m}(\theta,\phi)\]
+Assuming that the potential is spherically symmetric we could express the angular part of the wave functions to be spherical harmonics $Y\_{l,m}(\theta,\phi)$. These functions behaves as
+$$Y\_{l,m}(\theta,\phi)\rightarrow (-1)^l Y\_{l,m}(\theta,\phi)$$
 under the parity transformation $\mathbf{P}$ that takes $\vec{r}$ to $-\vec{r}$. Experimental evidence supports the fact that the strong and electromagnetic forces conserve parity so we can expect parity to be a conserved quantum number for the nucleus states. With our labelling with $l$ the parity of a state can be directly read off as $(-1)^l$.
 
 If a shell is full we expect all contributions to the angular momentum to cancel out and the parity to be $+1$ as there is an even number of particles in the full shell. Let's now look at what happens if we have a full shells up to one additional nucleon. We can apply our "one particle in the potential of the other" analysis of the shell model and predict that the spin and parity of the nucleus will be determined by the parity and angular momentum of this nucleon, so the spin will be $0,1,2,3,...$ if the single nucleon is in a $s,p,d,f,...$ state. Its parity will be $(-1)^l$, that is $+1$ for $s,d,g,..$ shells and $(-1)$ for $p,f,h,...$ shells. 
@@ -63,6 +63,6 @@ The shell model gives predictions for even-even nuclei: they will all have $J^P=
 
 With the shell model we can also explain some of the spin and parity of excited levels of nuclei. Figure~\ref{fig:levelsNOOOF} shows the energies and $J^P$ quantum numbers of excitations of nuclei with proton and neutron numbers close to the magical number $8$. Let us look at these nuclei in turn. $\ce{^{16}O}$ has full shells for both neutrons and nucleons. It is therefore very stable and its ground state has $J^P=0^+$.
 
-$\ce{^{15}N}$ has 8 neutrons so the neutron $1s$ and $1p$ shells are full. It has 7 protons so we have a full $1s$ shell, a full $1p_{3/2}$ shell but a hole in the $1p_{1/2}$ shell. We therefore expect the spin and parity of the ground state to be $J=1/2$ and $P=(-1)^1=-1$.\footnote{One could have argued the other way and say the unpaired proton is in the $1p_{1/2}$ shell, instead of looking for the shell of the hole.}
+$\ce{^{15}N}$ has 8 neutrons so the neutron $1s$ and $1p$ shells are full. It has 7 protons so we have a full $1s$ shell, a full $1p\_{3/2}$ shell but a hole in the $1p\_{1/2}$ shell. We therefore expect the spin and parity of the ground state to be $J=1/2$ and $P=(-1)^1=-1$.\footnote{One could have argued the other way and say the unpaired proton is in the $1p\_{1/2}$ shell, instead of looking for the shell of the hole.}
 
 $\ce{^{15}O}$ and $\ce{^{17}N}$ are called \emph{mirror nuclei} because they map into each other through swapping the protons with neutrons.

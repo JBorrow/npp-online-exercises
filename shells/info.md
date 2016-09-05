@@ -20,17 +20,18 @@ Unfortunately the actual nuclear potential is neither harmonic nor an infinite w
 $$V(r)=-\frac{V\_0}{1+e^{(r-r\_0)/a}}$$
 with parameters $r\_0$ and $a$ fitted from data. With this potential we obtain the levels shown in the central part of Figure~\ref{fig:levels}. This potential alone is not enough to describe the features that the mass spectrum of nuclides displays. Although the first magic numbers are predicted properly the gap between energy levels do not line up properly to explain the higher magic numbers.
 
-To achieve the agreement with the data we need to consider an addition to the potential: the spin-orbit coupling. In the hydrogen atom electron energy levels the interaction caused by the spin-orbit term in the potential is responsible for the hydrogen fine structure. In the hydrogen case it is not a large effect. In the case of the shell model of the nucleus the effect is larger and does not only creates a splitting but actually reorders shells of different $n.l$ quantum numbers, which places the gabs in the energy levels at the right place to explain the magic numbers. The spin-orbit coupling term is given by 
-$$V\_{SO}=V\_{ls}(r)\left<\vec{l}\cdot\vec{s}\right>$$ 
+To achieve the agreement with the data we need to consider an addition to the potential: the spin-orbit coupling. In the hydrogen atom electron energy levels the interaction caused by the spin-orbit term in the potential is responsible for the hydrogen fine structure. In the hydrogen case it is not a large effect. In the case of the shell model of the nucleus the effect is larger and does not only creates a splitting but actually reorders shells of different $n.l$ quantum numbers, which places the gabs in the energy levels at the right place to explain the magic numbers. The spin-orbit coupling term is given by
+
+$$
+	V\_{SO}=V\_{ls}(r)\left<\vec{l}\cdot\vec{s}\right>
+$$ 
 We can calculate the expectation value of the expectation value of $\vec{l}\cdot\vec{s}$ as a function of the eigenvalues of the total angular momentum $j$:
 $$
 j(j+1)=\left<\vec{j}^2\right>=\left<(\vec{l}+\vec{s})^2\right>
-=
-\left<\vec{l}^2+2\vec{l}\cdot\vec{s}+\vec{s}^2\right>
-=l(l+1)+s(s+1)+2\left<\vec{l}\cdot\vec{s}\right>
+= \left<\vec{l}^2+2\vec{l}\cdot\vec{s}+\vec{s}^2\right> = l(l+1)+s(s+1)+2\left<\vec{l}\cdot\vec{s}\right>
 $$
-$$\Rightarrow
-\left<\vec{l}\cdot\vec{s}\right>=\frac{j(j+1)-l(l+1)-s(s+1)}{2}
+$$
+\Rightarrow \left<\vec{l}\cdot\vec{s}\right>=\frac{j(j+1)-l(l+1)-s(s+1)}{2}
 $$
 according to the rules of angular momentum addition the possible values of $j$ are either $l+1/2$ of $l-1/2$ so we get
 $$\left<\vec{l}\cdot\vec{s}\right>=\left\{\begin{array}{rcc}

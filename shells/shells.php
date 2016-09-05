@@ -20,7 +20,8 @@
 			}
 
 			img {
-				width:75%;
+				width:60%;
+				margin:auto;
 			}
 
 		</style>

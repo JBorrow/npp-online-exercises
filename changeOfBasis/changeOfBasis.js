@@ -28,7 +28,45 @@ function tensorProduct(a, b) {
 };
 
 
-/* Test Code for tensorProduct
+function calculate2x2(theta) {
+	// Returns e^i[0, theta][-theta, 0]
+	return [[math.complex(1, 0), math.exp(math.complex(0, theta))], [math.exp(math.complex(0, -theta)), math.complex(1, 0)]];
+};
+
+
+function calculate4x4(theta, alpha) {
+	// The 'bare' 4x4 before any change of basis.
+	var matrixA = calculate2x2(theta);
+	var matrixB = calculate2x2(alpha);
+	return tensorProduct(matrixA, matrixB);
+};
+
+
+function printMatrixNice(mat) {
+	var dimensions = [mat.length, mat[0].length];
+	
+	var printable = "$$ \\begin{pmatrix} \n";
+
+	for (i=0; i<dimensions[0]; i++) {
+		for (j=0; j<dimensions[1]; j++) {
+			thisContent = mat[i][j];
+			thisNumber = thisContent.re + " + " + thisContent.im + "i ";
+			printable = printable + thisNumber + " & ";
+		};
+
+		if (i != dimensions[0]-1) {
+			printable = printable + " \\\\ \n";
+		} else {
+			// final element
+			printable = printable + "\n";
+		};
+	};
+
+	printable = printable + "\\end{pmatrix} $$";
+
+	return printable;
+}
+	
 
 var a = [[math.complex(0, 0), math.complex(0, 1)], [math.complex(0, 1), math.complex(0, 0)]];
 var b = [[math.complex(0, 0), math.complex(0, 0)], [math.complex(1, 0), math.complex(1, 0)]];
@@ -36,8 +74,4 @@ var b = [[math.complex(0, 0), math.complex(0, 0)], [math.complex(1, 0), math.com
 console.log(a);
 var product = tensorProduct(a, b);
 
-console.log('final');
-for (var i = 0; i < product.length; i++) {
-	console.log(product[i]);
-}
-*/
+document.write(printMatrixNice(product));

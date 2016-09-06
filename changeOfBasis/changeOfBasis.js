@@ -20,7 +20,7 @@ function tensorProduct(a, b) {
 			aElement = a[parseInt(i/bDimensions[0])][parseInt(j/bDimensions[1])];
 			bElement = b[parseInt(i % bDimensions[0])][parseInt(j % bDimensions[1])];
 
-			finalArray[i][j] = aElement*bElement;
+			finalArray[i][j] = math.multiply(aElement, bElement); // this must be used with mathjs
 		}
 	}
 	
@@ -29,14 +29,11 @@ function tensorProduct(a, b) {
 
 
 /* Test Code for tensorProduct
-var a = [[0, 1],
-	     [1, 0],
-		 [1, 1]];
-var b = [[2, 3, 4],
-	     [4, 5, 5]];
+
+var a = [[math.complex(0, 0), math.complex(0, 1)], [math.complex(0, 1), math.complex(0, 0)]];
+var b = [[math.complex(0, 0), math.complex(0, 0)], [math.complex(1, 0), math.complex(1, 0)]];
 
 console.log(a);
-console.log(b);
 var product = tensorProduct(a, b);
 
 console.log('final');

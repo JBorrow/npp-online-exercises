@@ -1,5 +1,38 @@
 /* Provides logic and displays for the changeOfBasis interactive exhibit
  * as part of the Nuclear and Particle Physics course
+ *
+ *  REQUIREMENTS: MathJax & MathJS (included in the attached html file)
+ *
+ * functions:
+ * 	tensorProduct a, b:
+ * 		finds the tensor product of two matricies a, b.
+ * 		works with complex matricies
+ *	
+ * 	calculate2x2 theta:
+ * 		finds a 2x2 matrix (complex) of whatever it is programmed to
+ * 		do. Used throughout the code.
+ *
+ *	calculate4x4 theta, alpha:
+ *		finds a 4x4 matrix made up of
+ *		  calculate2x2(theta) x calculate2x2(alpha)
+ *
+ *	calculateChangeOfBasis theta:
+ *		finds the pre-basis changed matrix:
+ *			calculate2x2(theta) x calculate2x2(alpha).
+ *
+ *	printMatrixNice mat:
+ *		takes complex matrix mat and prints nicely using LaTeX.
+ *
+ *	makePrettyMatrix cellsX, cellsY, sizeX, sizeY, ID:
+ *		makes a (up to 9x9) matrix of spinners. See the html file for
+ *		what this looks like.
+ *
+ *	mapPrettyMatrix mat (above):
+ *		maps the matrix mat onto the above matrix, given the ids generated
+ *		from the original function
+ *
+ *	update:
+ *		for animation. See html file for what this looks like.
  */
 
 function tensorProduct(a, b) {
@@ -30,7 +63,8 @@ function tensorProduct(a, b) {
 
 function calculate2x2(theta) {
 	// Returns e^i[0, theta][-theta, 0]
-	return [[math.complex(1, 0), math.exp(math.complex(0, theta))], [math.exp(math.complex(0, -theta)), math.complex(1, 0)]];
+	return [[math.complex(math.cos(theta), 0), math.complex(0, math.sin(theta))],
+			[math.complex(0, math.sin(theta)), math.complex(math.cos(theta), 0)]];
 };
 
 
@@ -120,7 +154,7 @@ function makePrettyMatrix(cellsX, cellsY, sizeX, sizeY, ID) {
 };
 
 
-function mapPrettyMatrix(svg, matrix, cellsX, cellsY, sizeX, sizeY, ID) {
+function mapPrettyMatrix(matrix, cellsX, cellsY, sizeX, sizeY, ID) {
 	// Put a matrix onto the pretty matrix framework.
 	var xWidth = sizeX/cellsX;
 	var yWidth = sizeY/cellsY;
@@ -144,19 +178,22 @@ function mapPrettyMatrix(svg, matrix, cellsX, cellsY, sizeX, sizeY, ID) {
 function update() {
 	var unchangedBasis = calculate4x4(theta, theta);
 	var changedBasis = calculateChangeOfBasis(theta);
+	var original = calculate2x2(theta);
 
 	document.getElementById('theta').innerHTML = "$$ \\theta = " + theta.toPrecision(3) + " $$";
 	document.getElementById('unchangedm').innerHTML = printMatrixNice(unchangedBasis);
 	document.getElementById('changedm').innerHTML = printMatrixNice(changedBasis);
+	mapPrettyMatrix(original, original, 2, 2, 150, 150, 'circTest');
 	mapPrettyMatrix(unchanged, unchangedBasis, 4, 4, 300, 300, 'unchanged');
 	mapPrettyMatrix(changed, changedBasis, 4, 4, 300, 300, 'changed');
 
-	theta = theta + 0.005;
+	theta = theta + 0.01;
 
 	MathJax.Hub.Typeset();
 };
 
 theta = 0.;
+original = makePrettyMatrix(2, 2, 150, 150, 'circTest');
 unchanged = makePrettyMatrix(4, 4, 300, 300, 'unchanged');
 changed = makePrettyMatrix(4, 4, 300, 300, 'changed');
 

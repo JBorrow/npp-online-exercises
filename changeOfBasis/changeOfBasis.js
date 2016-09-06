@@ -124,13 +124,19 @@ function mapPrettyMatrix(svg, matrix, cellsX, cellsY, sizeX, sizeY, ID) {
 	// Put a matrix onto the pretty matrix framework.
 	var xWidth = sizeX/cellsX;
 	var yWidth = sizeY/cellsY;
+	var lineFactor = math.divide(0.5, math.sqrt(2)); // so our lines don't escape bounding boxes.
 
 	for (x=0; x < cellsX; x++) {
 		for (y=0; y < cellsY; y++) {
-			var thisLine = svg.get(ID + 'line' + x + y);
+			var thisLine = SVG.get(ID + 'line' + x + y);
 			var element = matrix[x][y];
 
-			thisLine.plot((x+0.5)*xWidth, (y+0.5)*yWidth, (x+0.5*element.re)*xWidth, (y + 0.5*element.re)*yWidth);
+
+			thisLine.plot((x+0.5)*xWidth,
+						  (y+0.5)*yWidth,
+						  (x + 0.5 + lineFactor*element.re)*xWidth,
+						  (y + 0.5 + lineFactor*element.im)*yWidth
+			);
 		}
 	}
 };	
@@ -140,10 +146,12 @@ function update() {
 	var changedBasis = calculateChangeOfBasis(theta);
 
 	document.getElementById('theta').innerHTML = "$$ \\theta = " + theta.toPrecision(3) + " $$";
+	document.getElementById('unchangedm').innerHTML = printMatrixNice(unchangedBasis);
+	document.getElementById('changedm').innerHTML = printMatrixNice(changedBasis);
 	mapPrettyMatrix(unchanged, unchangedBasis, 4, 4, 300, 300, 'unchanged');
 	mapPrettyMatrix(changed, changedBasis, 4, 4, 300, 300, 'changed');
 
-	theta = theta + 0.01;
+	theta = theta + 0.005;
 
 	MathJax.Hub.Typeset();
 };

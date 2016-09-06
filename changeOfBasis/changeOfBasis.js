@@ -2,24 +2,45 @@
  * as part of the Nuclear and Particle Physics course
  */
 
-function calculate2x2(theta) {
-	/* returns e^{i((0, theta), (-theta, 0))} */
-	var original = math.matrix([[0, math.complex(0, theta)],[math.complex(0, -theta), 0]]);
-	return math.exp(original)
+function tensorProduct(a, b) {
+	// Calculates a x b (in a very inefficnet way!
+	var aDimensions = [a.length, a[0].length];
+	var bDimensions = [b.length, b[0].length];
+
+	var newDimensions = [aDimensions[0]*bDimensions[0], aDimensions[1]*bDimensions[1]];
+	
+	var finalArray = [];
+
+	var aElement;
+	var bElement;
+
+	for (i=0; i<newDimensions[0]; i++) {
+		finalArray[i] = [];
+		for (j=0; j<newDimensions[1]; j++) {
+			aElement = a[parseInt(i/bDimensions[0])][parseInt(j/bDimensions[1])];
+			bElement = b[parseInt(i % bDimensions[0])][parseInt(j % bDimensions[1])];
+
+			finalArray[i][j] = aElement*bElement;
+		}
+	}
+	
+	return finalArray;
 };
 
-var productTwoTwoByTwo = product.bind(null, [2,2], [2,2]); // tensor-product lib
 
-function calculate4x4(theta, alpha) {
-	/* the tensor product of two matricies */
-	var firstMatrix = calculate2x2(theta);
-	var secondMatrix = calculate2x2(alpha);
+/* Test Code for tensorProduct
+var a = [[0, 1],
+	     [1, 0],
+		 [1, 1]];
+var b = [[2, 3, 4],
+	     [4, 5, 5]];
 
-	return productTwoTwoByTwo(firstMatrix, secondMatrix);
-};
+console.log(a);
+console.log(b);
+var product = tensorProduct(a, b);
 
-
-console.log(calculate2x2(0));
-console.log(calculate2x2(math.pi));
-console.log(calculate4x4(0, 0));
-
+console.log('final');
+for (var i = 0; i < product.length; i++) {
+	console.log(product[i]);
+}
+*/

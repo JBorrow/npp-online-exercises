@@ -62,9 +62,9 @@ function tensorProduct(a, b) {
 
 
 function calculate2x2(theta) {
-	// Returns e^i[0, theta][-theta, 0]
-	return [[math.complex(math.cos(theta), 0), math.complex(0, math.sin(theta))],
-			[math.complex(0, math.sin(theta)), math.complex(math.cos(theta), 0)]];
+	// Returns the magic matrix.
+	return [[math.complex(math.cos(theta), (2./3.)*math.sin(theta)), math.complex((-2./3.)*math.sin(theta), (1./3.)*math.sin(theta))],
+			[math.complex((2./3.)*math.sin(theta), (1./3.)*math.sin(theta)), math.complex(math.cos(theta), (-2./3.)*math.sin(theta))]];
 };
 
 

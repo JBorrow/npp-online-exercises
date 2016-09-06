@@ -9,6 +9,9 @@
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
+		
+		<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+
 		<style>
 
 			.myimg {
@@ -16,18 +19,35 @@
 				margin-top:2em;
 			}
 
+			img {
+				width:60%;
+				margin:auto;
+			}
+
 		</style>
 
 	</head>
 
 	<body>
-		<div class='container'>
 			<div class='jumbotron' style='margin-top:2em;'>
-				<h1 class='display-3'>Shell Model Demo</h1>
+				<div class='container'>
+				<h1 class='display-3'>The Shell Model</h1>
+				</div>
+			</div>
+		<div class='container'>
+
+			<div class='row'>
+				<div class='col-xs-12'>
+					<?php require_once('parsedown/Parsedown.php');
+					$Parsedown = new Parsedown();
+					$MyText = file_get_contents('info.md');
+					echo $Parsedown->text($MyText);
+					?>
+				</div>
 			</div>
 
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 		<div class='buttons'>
+			<h1>Interactive Shells</h1>
 			<form>
 				<div class='form-group row'>
 					<label for="numProtons" class='col-xs-4 col-form-label'>Number of Protons</label>
@@ -56,7 +76,7 @@
 		</div>
 		<div class='myimg col-md-6'>
 
-			<object id='neutrons' type='image/svg+xml' data='./neutrons-online.svg' width="100%">
+			<object id='neutrons' type='image/svg+xml' data='./neutrons-thin.svg' width="100%">
 			</object>
 
 		</div>
@@ -66,6 +86,14 @@
 		<footer>
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
 			<script src='./shells.js'></script>
+			<script type="text/x-mathjax-config">
+				MathJax.Hub.Config({
+					tex2jax: {
+						inlineMath: [['$','$'], ['\\(','\\)']],
+						processEscapes: true
+					}
+				});</script>
+			<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
 		</footer>

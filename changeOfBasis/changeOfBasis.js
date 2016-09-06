@@ -64,7 +64,12 @@ function printMatrixNice(mat) {
 	for (i=0; i<dimensions[0]; i++) {
 		for (j=0; j<dimensions[1]; j++) {
 			thisContent = mat[i][j];
-			thisNumber = thisContent.re + " + " + thisContent.im + "i ";
+			if (thisContent.im < 0) {
+				operator = ""; // already included in thisContent.im is a -
+			} else {
+				operator = " + ";
+			};
+			thisNumber = thisContent.re.toPrecision(3) + operator + thisContent.im.toPrecision(3) + "i ";
 			printable = printable + thisNumber + " & ";
 		};
 
@@ -79,14 +84,73 @@ function printMatrixNice(mat) {
 	printable = printable + "\\end{pmatrix} $$";
 
 	return printable;
-}
+};
+
+
+function makePrettyMatrix(cellsX, cellsY, sizeX, sizeY, ID) {
+	// Give ID of the div you want this to be created in.
+	var xWidth = sizeX/cellsX;
+	var yWidth = sizeY/cellsY;
 	
-var theta = 0.;
+	var bigSVG = SVG(ID).size(sizeX, sizeY);
 
-var unchangedBasis = calculate4x4(theta, theta);
-var changedBasis = calculateChangeOfBasis(theta);
+	// Create backing boxes & lines
+	for (x=0; x < cellsX; x++) {
+		for (y=0; y < cellsY; y++) {
+			var thisRect = bigSVG.rect(xWidth, yWidth);
+			thisRect.attr({
+				id: ID + 'cell' + x + y,
+				x : x*xWidth,
+				y: y*yWidth,
+				stroke: '#000',
+				'stroke-width': 1,
+				fill: 'white',
+			});
 
-console.log(changedBasis);
+			var thisLine = bigSVG.line((x+0.5)*xWidth, (y+0.5)*yWidth, (x+0.5)*xWidth, y*yWidth);
+			thisLine.attr({
+				id: ID + 'line' + x + y,
+				stroke: '#000',
+				'stroke-width': 1,
+			});
+		}
+	};
 
-document.write(printMatrixNice(unchangedBasis));
-document.write(printMatrixNice(changedBasis));
+	return bigSVG;
+};
+
+
+function mapPrettyMatrix(svg, matrix, cellsX, cellsY, sizeX, sizeY, ID) {
+	// Put a matrix onto the pretty matrix framework.
+	var xWidth = sizeX/cellsX;
+	var yWidth = sizeY/cellsY;
+
+	for (x=0; x < cellsX; x++) {
+		for (y=0; y < cellsY; y++) {
+			var thisLine = svg.get(ID + 'line' + x + y);
+			var element = matrix[x][y];
+
+			thisLine.plot((x+0.5)*xWidth, (y+0.5)*yWidth, (x+0.5*element.re)*xWidth, (y + 0.5*element.re)*yWidth);
+		}
+	}
+};	
+	
+function update() {
+	var unchangedBasis = calculate4x4(theta, theta);
+	var changedBasis = calculateChangeOfBasis(theta);
+
+	document.getElementById('theta').innerHTML = "$$ \\theta = " + theta.toPrecision(3) + " $$";
+	mapPrettyMatrix(unchanged, unchangedBasis, 4, 4, 300, 300, 'unchanged');
+	mapPrettyMatrix(changed, changedBasis, 4, 4, 300, 300, 'changed');
+
+	theta = theta + 0.01;
+
+	MathJax.Hub.Typeset();
+};
+
+theta = 0.;
+unchanged = makePrettyMatrix(4, 4, 300, 300, 'unchanged');
+changed = makePrettyMatrix(4, 4, 300, 300, 'changed');
+
+setInterval(update, 10);
+

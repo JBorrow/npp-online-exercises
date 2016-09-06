@@ -183,9 +183,9 @@ function update() {
 	document.getElementById('theta').innerHTML = "$$ \\theta = " + theta.toPrecision(3) + " $$";
 	document.getElementById('unchangedm').innerHTML = printMatrixNice(unchangedBasis);
 	document.getElementById('changedm').innerHTML = printMatrixNice(changedBasis);
-	mapPrettyMatrix(original, original, 2, 2, 150, 150, 'circTest');
-	mapPrettyMatrix(unchanged, unchangedBasis, 4, 4, 300, 300, 'unchanged');
-	mapPrettyMatrix(changed, changedBasis, 4, 4, 300, 300, 'changed');
+	mapPrettyMatrix(original, 2, 2, 150, 150, 'circTest');
+	mapPrettyMatrix(unchangedBasis, 4, 4, 300, 300, 'unchanged');
+	mapPrettyMatrix(changedBasis, 4, 4, 300, 300, 'changed');
 
 	theta = theta + 0.01;
 

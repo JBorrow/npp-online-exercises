@@ -142,9 +142,9 @@ function makePrettyMatrix(cellsX, cellsY, sizeX, sizeY, ID) {
 				id: ID + 'cell' + x + y,
 				x : x*xWidth,
 				y : y*yWidth,
-				stroke: '#000',
-				'stroke-width': 1,
-				fill: 'white',
+				stroke: '#321F20',
+				'stroke-width': 2,
+				fill: '#FFF',
 			});
 
 			var thisCirc = bigSVG.circle(circleRadius);
@@ -152,14 +152,14 @@ function makePrettyMatrix(cellsX, cellsY, sizeX, sizeY, ID) {
 				id: ID + 'circ' + x + y,
 				cx : x*xWidth + circleRadius,
 				cy : y*yWidth + circleRadius,
-				fill: 'blue',
+				fill: '#006388',
 			});
 
 			var thisLine = bigSVG.line((x+0.5)*xWidth, (y+0.5)*yWidth, (x+0.5)*xWidth, y*yWidth);
 			thisLine.attr({
 				id: ID + 'line' + x + y,
-				stroke: '#FFF',
-				'stroke-width': 2,
+				stroke: '#C4E5FA',
+				'stroke-width': 4,
 			});
 		}
 	};
@@ -203,12 +203,12 @@ function update() {
 	var changedBasis = calculateChangeOfBasis(theta);
 	var original = calculate2x2(theta);
 
-	document.getElementById('theta').innerHTML = "$$ \\theta = $$" + theta.toPrecision(3);
+	document.getElementById('theta').innerHTML = "θ = " + theta.toPrecision(3);
 	mapPrettyMatrix(original, 2, 2, 150, 150, 'circTest');
 	mapPrettyMatrix(unchangedBasis, 4, 4, 300, 300, 'unchanged');
 	mapPrettyMatrix(changedBasis, 4, 4, 300, 300, 'changed');
 
-	theta = theta + 0.01;
+	theta = theta + 0.025;
 
 };
 

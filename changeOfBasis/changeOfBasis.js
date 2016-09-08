@@ -125,27 +125,41 @@ function makePrettyMatrix(cellsX, cellsY, sizeX, sizeY, ID) {
 	// Give ID of the div you want this to be created in.
 	var xWidth = sizeX/cellsX;
 	var yWidth = sizeY/cellsY;
+
+	if (xWidth < yWidth) {
+		var circleRadius = xWidth*0.5;
+	} else {
+		var circleRadius = yWidth*0.5;
+	}
 	
 	var bigSVG = SVG(ID).size(sizeX, sizeY);
 
-	// Create backing boxes & lines
+	// Create backing boxes, circles & lines
 	for (x=0; x < cellsX; x++) {
 		for (y=0; y < cellsY; y++) {
 			var thisRect = bigSVG.rect(xWidth, yWidth);
 			thisRect.attr({
 				id: ID + 'cell' + x + y,
 				x : x*xWidth,
-				y: y*yWidth,
+				y : y*yWidth,
 				stroke: '#000',
 				'stroke-width': 1,
 				fill: 'white',
 			});
 
+			var thisCirc = bigSVG.circle(circleRadius);
+			thisCirc.attr({
+				id: ID + 'circ' + x + y,
+				cx : x*xWidth + circleRadius,
+				cy : y*yWidth + circleRadius,
+				fill: 'blue',
+			});
+
 			var thisLine = bigSVG.line((x+0.5)*xWidth, (y+0.5)*yWidth, (x+0.5)*xWidth, y*yWidth);
 			thisLine.attr({
 				id: ID + 'line' + x + y,
-				stroke: '#000',
-				'stroke-width': 1,
+				stroke: '#FFF',
+				'stroke-width': 2,
 			});
 		}
 	};
@@ -154,17 +168,26 @@ function makePrettyMatrix(cellsX, cellsY, sizeX, sizeY, ID) {
 };
 
 
+function absLen(element) {
+	// finds the 'r' of a complex number
+	return math.sqrt(math.square(element.re) + math.square(element.im));
+}
+
+
 function mapPrettyMatrix(matrix, cellsX, cellsY, sizeX, sizeY, ID) {
 	// Put a matrix onto the pretty matrix framework.
 	var xWidth = sizeX/cellsX;
 	var yWidth = sizeY/cellsY;
-	var lineFactor = math.divide(0.5, math.sqrt(2)); // so our lines don't escape bounding boxes.
+	var lineFactor = 0.5; // so our lines don't escape bounding boxes.
 
 	for (x=0; x < cellsX; x++) {
 		for (y=0; y < cellsY; y++) {
 			var thisLine = SVG.get(ID + 'line' + x + y);
+			var thisCirc = SVG.get(ID + 'circ' + x + y);
 			var element = matrix[x][y];
+			var radius = absLen(element);
 
+			thisCirc.radius(radius*yWidth*0.5);
 
 			thisLine.plot((x+0.5)*xWidth,
 						  (y+0.5)*yWidth,
@@ -180,16 +203,13 @@ function update() {
 	var changedBasis = calculateChangeOfBasis(theta);
 	var original = calculate2x2(theta);
 
-	document.getElementById('theta').innerHTML = "$$ \\theta = " + theta.toPrecision(3) + " $$";
-	document.getElementById('unchangedm').innerHTML = printMatrixNice(unchangedBasis);
-	document.getElementById('changedm').innerHTML = printMatrixNice(changedBasis);
+	document.getElementById('theta').innerHTML = "$$ \\theta = $$" + theta.toPrecision(3);
 	mapPrettyMatrix(original, 2, 2, 150, 150, 'circTest');
 	mapPrettyMatrix(unchangedBasis, 4, 4, 300, 300, 'unchanged');
 	mapPrettyMatrix(changedBasis, 4, 4, 300, 300, 'changed');
 
 	theta = theta + 0.01;
 
-	MathJax.Hub.Typeset();
 };
 
 theta = 0.;
@@ -197,5 +217,5 @@ original = makePrettyMatrix(2, 2, 150, 150, 'circTest');
 unchanged = makePrettyMatrix(4, 4, 300, 300, 'unchanged');
 changed = makePrettyMatrix(4, 4, 300, 300, 'changed');
 
-setInterval(update, 10);
+setInterval(update, 33);
 
